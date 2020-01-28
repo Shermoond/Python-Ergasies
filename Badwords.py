@@ -35,7 +35,7 @@ def checker(word):
     return (res)
     
 
-doc=open("test.txt","r")
+doc=open("res.txt","r")
 wordlist=doc.read
 brokenup=wordlist.split(" ")
 for l in wordlist:
