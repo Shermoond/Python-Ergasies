@@ -29,19 +29,20 @@ def checker(word):
         
     print (bc,gc)
     if bc>=gc:
-        print ("bad  word")
+        res="Bad Word"
     else:
-        print("Good word")
-
+        res="Good Word"
+    return (res)
+    
 
 doc=open("test.txt","r")
-wordlist=doc.read()
-brokenup=wordlist.split()
-for l in brokenup:
-    if len(l)>3:
+wordlist=doc.read
+brokenup=wordlist.split(" ")
+for l in wordlist:
+    if len(l)>=3:  
         word=l
-        print(l)
-        checker(l)
+        result=checker(l)
+        print (l,result)
 doc.close()
 
 
