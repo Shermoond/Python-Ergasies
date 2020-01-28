@@ -36,10 +36,10 @@ def checker(word):
     
 
 doc=open("res.txt","r")
-wordlist=doc.read
+wordlist=doc.read()
 brokenup=wordlist.split(" ")
 for l in wordlist:
-    if len(l)>=3:  
+    if len(l)>=3:
         word=l
         result=checker(l)
         print (l,result)
